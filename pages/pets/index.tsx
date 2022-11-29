@@ -40,7 +40,7 @@ function Index() {
         </thead>
         <tbody>
           {optionsBreedDog.map((o) => (
-            <tr>
+            <tr key={o.name}>
               <td className="p-2">{o.name}</td>
               <td className="p-2">{o.breed}</td>
               <td className="p-2">{o.age}</td>
@@ -62,7 +62,7 @@ function Index() {
         </thead>
         <tbody>
           {optionsBreedCat.map((o) => (
-            <tr>
+            <tr key={o.name}>
               <td className="p-2">{o.name}</td>
               <td className="p-2">{o.breed}</td>
               <td className="p-2">{o.age}</td>
